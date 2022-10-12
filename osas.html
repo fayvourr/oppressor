@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark kershaw</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            padding: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: blue;
+            transform: translateY(-20px);
+            font-size: 20px
+        }
+        .head{
+            display: flex;
+            padding: 100px;
+        }
+        .second{
+            height: 300px;
+            width: 500px;
+            display: flex;
+            background-color: blue;
+            padding: 100px;
+            position: relative;
+            left: 150px;
+        }
+        .first{
+            position: relative;
+            right: 40px;
+        }
+        .good{
+            position: relative;
+            right: 80px;
+        }
+        .hmm{
+            position: relative;
+            right: 150px;
+            height: 150px;
+            bottom: 20px;
+            z-index: 1;
+        }
+        .okay{
+            position: relative;
+            right: 210px;
+        }
+        h1{
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .search{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        @media screen and (max-width:600px){
+            li{
+                display: block;
+                text-align: center;
+            }
+            nav{
+                display: block;
+            }
+            .head{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><b>Kershaw Blog</b></a></li>
+            <li><a href="#"><b>Accounting</b></a></li>
+            <li><a href="#"><b>Business</b></a></li>
+            <li><a href="#"><b>Clio</b></a></li>
+            <li><a href="#"><b>Technology</b></a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search the Blog">
+        </div>
+    </nav>
+    <div class="head">
+        <div class="first">
+            Clio > Posts > Marketing 
+            <p><h1>Kershaw & Marcus <br> LLP Law Firm</h1></p><br><br>
+        </div>
+        <div class="second">
+            <img class="good" src="osas pics.jpg">
+            <img class="hmm" src="osas pics2.jpg">
+            <img class="okay" src="osas pics3.jpg">
+        </div>
+    </div>
+</body>
+</html>
